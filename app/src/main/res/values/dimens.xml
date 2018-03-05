@@ -1,0 +1,8 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="tx_xlarge">24sp</dimen>
+    <dimen name="tx_large">20sp</dimen>
+    <dimen name="tx_mid">16sp</dimen>
+    <dimen name="tx_small">12sp</dimen>
+    <dimen name="tx_xsmall">8sp</dimen>
+</resources>

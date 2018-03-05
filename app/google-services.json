@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "589198348483",
+    "firebase_url": "https://polisiku-d5e8e.firebaseio.com",
+    "project_id": "polisiku-d5e8e",
+    "storage_bucket": "polisiku-d5e8e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:589198348483:android:b6094e9c29365a77",
+        "android_client_info": {
+          "package_name": "com.piramidsoft.polisiku"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "589198348483-ub0gjeq66f6hghj8je3ortnm7k7rjl7v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZZ_9tdr-vui3-Bdsr3E7Q4W11aDaBFDM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
