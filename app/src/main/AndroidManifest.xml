@@ -31,7 +31,8 @@
         <activity android:name=".Fragments.CariFragment" />
         <activity android:name=".Fragments.LaporanFragment" />
         <activity android:name=".FragmentNavigationBottom.PolisiFragment" />
-        <activity android:name=".FragmentNavigationBottom.MoreFragment"></activity>
+        <activity android:name=".FragmentNavigationBottom.MoreFragment" />
+        <activity android:name=".DetailMenu.DetailListMenu"></activity>
     </application>
 
 </manifest>
