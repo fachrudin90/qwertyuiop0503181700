@@ -16,23 +16,17 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <ImageButton
-                android:id="@+id/back"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/colorPrimary"
-                android:src="@drawable/ic_back" />
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="MORE"
+                android:text="HOME"
                 android:textColor="@android:color/white"
                 android:textSize="17sp"
                 android:textStyle="bold" />
         </LinearLayout>
     </android.support.v7.widget.Toolbar>
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rvListHome"
         android:layout_width="match_parent"

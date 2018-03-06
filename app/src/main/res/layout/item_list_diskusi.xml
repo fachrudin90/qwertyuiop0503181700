@@ -7,7 +7,7 @@
     android:orientation="horizontal">
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/ImgDiskusi"
+        android:id="@+id/ImgVideo"
         android:layout_width="100sp"
         android:layout_height="100sp"
         android:layout_gravity="center_vertical"

@@ -6,25 +6,25 @@ package com.piramidsoft.polisiku.Model;
  */
 
 public class ModelKomentar {
-    private int ImgAkun;
-    private String Nama,Komentar,Tanggal;
+    int ImgKomentar;
+    String Nama, Komentar, Tanggal;
 
     public ModelKomentar() {
     }
 
-    public ModelKomentar(int imgAkun, String nama, String komentar, String tanggal) {
-        ImgAkun = imgAkun;
+    public ModelKomentar(int imgKomentar, String nama, String komentar, String tanggal) {
+        ImgKomentar = imgKomentar;
         Nama = nama;
         Komentar = komentar;
         Tanggal = tanggal;
     }
 
-    public int getImgAkun() {
-        return ImgAkun;
+    public int getImgKomentar() {
+        return ImgKomentar;
     }
 
-    public void setImgAkun(int imgAkun) {
-        ImgAkun = imgAkun;
+    public void setImgKomentar(int imgKomentar) {
+        ImgKomentar = imgKomentar;
     }
 
     public String getNama() {

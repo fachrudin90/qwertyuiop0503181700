@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/rounded_white"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/ImgVideo"
+        android:layout_width="160sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:adjustViewBounds="true"
+        android:src="@drawable/mopol" />
+
+    <TextView
+        android:id="@+id/etTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ImgVideo"
+        android:paddingLeft="5dp"
+        android:text="Polisi Break Dance"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/etOperator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etTitle"
+        android:layout_toRightOf="@+id/ImgVideo"
+        android:paddingLeft="5dp"
+        android:text="AUZAN CAHYA"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/etBerita"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etOperator"
+        android:layout_toRightOf="@+id/ImgVideo"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:text="Example text in here" />
+
+    <TextView
+        android:id="@+id/etWaktu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:layout_alignBottom="@+id/ImgVideo"
+        android:layout_toEndOf="@+id/ImgVideo"
+        android:gravity="center_vertical"
+        android:text="14:00 - 05/07/2018"
+        android:textSize="@dimen/tx_small" />
+
+    <TextView
+        android:id="@+id/etViewers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etWaktu"
+        android:layout_alignBottom="@+id/etWaktu"
+        android:layout_alignParentEnd="true"
+        android:textSize="@dimen/tx_small"
+        android:text="x100" />
+</RelativeLayout>

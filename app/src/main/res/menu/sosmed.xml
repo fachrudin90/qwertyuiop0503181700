@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_fb"
+        android:icon="@drawable/was"
+        android:title="@string/fb" />
+
+    <item
+        android:id="@+id/nav_wa"
+        android:icon="@drawable/wa"
+        android:title="@string/wa" />
+
+    <item
+        android:id="@+id/nav_line"
+        android:icon="@drawable/line"
+        android:title="@string/line" />
+
+    <item
+        android:id="@+id/nav_twitter"
+        android:icon="@drawable/twitt"
+        android:title="@string/twitt" />
+
+</menu>

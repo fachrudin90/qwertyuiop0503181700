@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/scrollView"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -42,7 +43,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
-            android:background="@android:color/white"
+            android:background="@drawable/rounded_white"
             android:orientation="vertical">
 
             <RelativeLayout
@@ -85,64 +86,20 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginBottom="20dp"
                 android:layout_marginTop="20dp"
                 android:background="@color/abuGaris" />
 
-            <TableLayout
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/RvMenuDetail"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:shrinkColumns="*">
-
-                <TableRow>
-
-                    <ImageView
-                        android:id="@+id/tanggal"
-                        android:layout_width="100dp"
-                        android:layout_height="60sp"
-                        android:padding="10dp"
-                        android:src="@drawable/love" />
-
-                    <View
-                        android:layout_width="1dp"
-                        android:layout_height="match_parent"
-                        android:background="@android:color/darker_gray" />
-
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="60sp"
-                        android:padding="10dp"
-                        android:src="@drawable/navigation" />
-
-                    <View
-                        android:layout_width="1dp"
-                        android:layout_height="match_parent"
-                        android:background="@android:color/darker_gray" />
-
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="60sp"
-                        android:padding="10dp"
-                        android:src="@drawable/message" />
-
-                    <View
-                        android:layout_width="1dp"
-                        android:layout_height="match_parent"
-                        android:background="@color/abuGaris" />
-
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="60sp"
-                        android:padding="10dp"
-                        android:src="@drawable/share" />
-                </TableRow>
-            </TableLayout>
+                android:layout_height="0dp"
+                android:layout_weight="1" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginBottom="20dp"
-                android:layout_marginTop="20dp"
                 android:background="@color/abuGaris" />
 
             <TextView
@@ -150,7 +107,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:text="@string/appbar_scrolling_view_behavior" />
+                android:text="@string/lorem" />
 
             <TextView
                 android:id="@+id/txStatus"
@@ -158,19 +115,40 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:padding="10dp"
-                android:text="@string/pengirimlap" />
+                android:text="Status Laporan : Diproses" />
         </LinearLayout>
 
+        <RelativeLayout
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/RvKomentar"
-            android:layout_width="match_parent"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:background="@android:color/white"
             android:layout_height="wrap_content"
+            android:layout_width="match_parent"
             android:layout_below="@+id/listLaporan">
 
-        </android.support.v7.widget.RecyclerView>
-</RelativeLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/RvKomentar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@android:color/white"
+                android:padding="3dp" />
+
+            <io.github.yavski.fabspeeddial.FabSpeedDial
+                android:id="@+id/Fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom|end"
+                app:fabGravity="bottom_end"
+                app:fabMenu="@menu/sosmed"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                app:miniFabBackgroundTint="@android:color/white"
+                app:miniFabDrawableTint="@android:color/holo_red_dark"
+                app:miniFabTitleTextColor="@android:color/holo_blue_dark" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
 </ScrollView>

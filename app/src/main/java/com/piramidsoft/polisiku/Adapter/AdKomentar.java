@@ -16,11 +16,6 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import de.hdodenhof.circleimageview.CircleImageView;
 
-/**
- * Created by Ayo Maju on 06/03/2018.
- * Updated by Muhammad Iqbal on 06/03/2018.
- */
-
 public class AdKomentar extends RecyclerView.Adapter<AdKomentar.AdKomentarHolder> {
 
     private ArrayList<ModelKomentar> arrayList;
@@ -34,13 +29,13 @@ public class AdKomentar extends RecyclerView.Adapter<AdKomentar.AdKomentarHolder
     @Override
     public AdKomentarHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-        View view = inflater.inflate(R.layout.list_komentar_menu, parent, false);
+        View view = inflater.inflate(R.layout.item_list_komentar_menu, parent, false);
         return new AdKomentarHolder(view);
     }
 
     @Override
     public void onBindViewHolder(AdKomentarHolder holder, int position) {
-        holder.imgAkun.setImageResource(arrayList.get(position).getImgAkun());
+        holder.imgAkun.setImageResource(arrayList.get(position).getImgKomentar());
         holder.tvNama.setText(arrayList.get(position).getNama());
         holder.txKomentar.setText(arrayList.get(position).getKomentar());
         holder.tvTgl.setText(arrayList.get(position).getTanggal());

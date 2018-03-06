@@ -32,5 +32,11 @@
     <string name="setting">Settings</string>
     <string name="profile">Profile</string>
     <string name="keluar">Keluar</string>
+    <string name="fb">Facebook</string>
+    <string name="twitt">Twitter</string>
+    <string name="wa">WhatsApp</string>
+    <string name="line">Line</string>
+    <string name="jam">10:00 12/02/2018</string>
     <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</string>
+    <string name="mbakyayuk">Kamu pasti sudah sering mendengar nama UGM, kan? Kampus kondang yang berada di wilayah Yogyakarta ini memang gudangnya orang cerdas.</string>
 </resources>

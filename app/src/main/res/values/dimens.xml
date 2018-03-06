@@ -6,6 +6,7 @@
     <dimen name="tx_small">12sp</dimen>
     <dimen name="tx_xsmall">8sp</dimen>
     <dimen name="size_med">16sp</dimen>
+    <dimen name="size_xmed">14sp</dimen>
     <dimen name="size_small">12sp</dimen>
     <dimen name="size_xsmall">10sp</dimen>
     <dimen name="size_large">20sp</dimen>

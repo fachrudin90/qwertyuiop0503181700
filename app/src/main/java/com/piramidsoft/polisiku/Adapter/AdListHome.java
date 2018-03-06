@@ -34,7 +34,7 @@ public class AdListHome extends RecyclerView.Adapter<AdListHome.AdlisHomeHolder>
     @Override
     public AdlisHomeHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-        View view = inflater.inflate(R.layout.list_home, parent, false);
+        View view = inflater.inflate(R.layout.item_list_home, parent, false);
         return new AdlisHomeHolder(view);
     }
 

@@ -30,7 +30,7 @@ public class AdDiskusi extends RecyclerView.Adapter<AdDiskusi.AdDiskusiHolder> {
     @Override
     public AdDiskusiHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-        View view = inflater.inflate(R.layout.list_item_diskusi, parent, false);
+        View view = inflater.inflate(R.layout.item_list_diskusi, parent, false);
         return new AdDiskusiHolder(view);
     }
 
@@ -49,7 +49,7 @@ public class AdDiskusi extends RecyclerView.Adapter<AdDiskusi.AdDiskusiHolder> {
     }
 
     public class AdDiskusiHolder extends RecyclerView.ViewHolder {
-        @BindView(R.id.ImgDiskusi)
+        @BindView(R.id.ImgVideo)
         CircleImageView ImgDiskusi;
         @BindView(R.id.etTitle)
         TextView etTitle;
