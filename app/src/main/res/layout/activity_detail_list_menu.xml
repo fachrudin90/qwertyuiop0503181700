@@ -1,138 +1,176 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.piramidsoft.polisiku.DetailMenu.DetailListMenu">
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/ImgdetailListHome"
+    android:scrollbars="none">
 
-    <ImageView
-        android:id="@+id/ImgdetailListHome"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:src="@drawable/gambar_olahraga" />
+        android:layout_height="match_parent"
+        android:background="#DCDDDD"
+        tools:context="com.piramidsoft.polisiku.DetailListMenu">
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize">
 
         <ImageView
-            android:id="@+id/btnback"
-            android:layout_width="wrap_content"
-            android:layout_height="?attr/actionBarSize"
-            android:src="@drawable/ic_back" />
-    </android.support.v7.widget.Toolbar>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/ImgdetailListHome"
-        android:layout_marginTop="15dp"
-        android:background="@android:color/white"
-        android:orientation="vertical">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:gravity="center">
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/imgAkun"
-                android:layout_width="70sp"
-                android:layout_height="70sp"
-                android:layout_margin="10dp"
-                android:layout_marginLeft="20dp"
-                android:src="@drawable/avatar" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_toRightOf="@+id/imgAkun"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/pengirimlap" />
-
-                <TextView
-                    android:id="@+id/txNama"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif"
-                    android:text="Fauzan Cahyani"
-                    android:textSize="19sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-        </RelativeLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginBottom="20dp"
-            android:layout_marginTop="20dp"
-            android:background="@color/abuGaris" />
-
-        <TableLayout
+            android:id="@+id/ImgdetailListHome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:shrinkColumns="*"
-            >
+            android:adjustViewBounds="true"
+            android:src="@drawable/gambar_olahraga" />
 
-            <TableRow>
-                <ImageView
-                    android:id="@+id/tanggal"
-                    android:layout_width="wrap_content"
-                    android:layout_height="60sp"
-                    android:padding="10dp"
-                    android:src="@drawable/avatar" />
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
 
-                <View
-                    android:layout_width="1dp"
-                    android:layout_height="match_parent"
-                    android:background="@android:color/darker_gray" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="60sp"
-                    android:padding="10dp"
-                    android:src="@drawable/avatar" />
-
-                <View
-                    android:layout_width="1dp"
-                    android:layout_height="match_parent"
-                    android:background="@android:color/darker_gray" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="60sp"
-                    android:padding="10dp"
-                    android:src="@drawable/avatar" />
-
-                <View
-                    android:layout_width="1dp"
-                    android:layout_height="match_parent"
-                    android:background="@android:color/darker_gray" />
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="60sp"
-                    android:padding="10dp"
-                    android:src="@drawable/avatar" />
-            </TableRow>
-        </TableLayout>
+            <ImageView
+                android:id="@+id/btnback"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:src="@drawable/ic_back" />
+        </android.support.v7.widget.Toolbar>
 
         <LinearLayout
+            android:id="@+id/listLaporan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_below="@+id/ImgdetailListHome"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white"
+            android:orientation="vertical">
 
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center">
 
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgAkun"
+                    android:layout_width="70sp"
+                    android:layout_height="70sp"
+                    android:layout_margin="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/avatar" />
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imgAkun"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pengirimlap" />
+
+                    <TextView
+                        android:id="@+id/txNama"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:text="Fauzan Cahyani"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/abuGaris" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:shrinkColumns="*">
+
+                <TableRow>
+
+                    <ImageView
+                        android:id="@+id/tanggal"
+                        android:layout_width="100dp"
+                        android:layout_height="60sp"
+                        android:padding="10dp"
+                        android:src="@drawable/love" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/darker_gray" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="60sp"
+                        android:padding="10dp"
+                        android:src="@drawable/navigation" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/darker_gray" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="60sp"
+                        android:padding="10dp"
+                        android:src="@drawable/message" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/abuGaris" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="60sp"
+                        android:padding="10dp"
+                        android:src="@drawable/share" />
+                </TableRow>
+            </TableLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/abuGaris" />
+
+            <TextView
+                android:id="@+id/txKomentar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/appbar_scrolling_view_behavior" />
+
+            <TextView
+                android:id="@+id/txStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:text="@string/pengirimlap" />
         </LinearLayout>
 
-    </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/RvKomentar"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/white"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/listLaporan">
+
+        </android.support.v7.widget.RecyclerView>
 </RelativeLayout>
+</ScrollView>

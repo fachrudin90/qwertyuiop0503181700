@@ -32,7 +32,7 @@
         <activity android:name=".Fragments.LaporanFragment" />
         <activity android:name=".FragmentNavigationBottom.PolisiFragment" />
         <activity android:name=".FragmentNavigationBottom.MoreFragment" />
-        <activity android:name=".DetailMenu.DetailListMenu"></activity>
+        <activity android:name=".DetailListMenu"></activity>
     </application>
 
 </manifest>
