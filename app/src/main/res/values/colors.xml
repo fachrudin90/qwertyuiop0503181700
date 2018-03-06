@@ -4,4 +4,7 @@
     <color name="colorPrimaryDark">#333333</color>
     <color name="colorAccent">#000000</color>
     <color name="abuGaris">#336E6E6E</color>
+    <color name="hitamFont">#6E6E6E</color>
+    <color name="abuFont">#6E6E6E</color>
+
 </resources>

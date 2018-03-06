@@ -26,13 +26,21 @@
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".FragmentNavigationBottom.HomeFragment" />
-        <activity android:name=".Fragments.CariFragment" />
-        <activity android:name=".Fragments.LaporanFragment" />
-        <activity android:name=".FragmentNavigationBottom.PolisiFragment" />
-        <activity android:name=".FragmentNavigationBottom.MoreFragment" />
-        <activity android:name=".DetailListMenu"></activity>
+        <activity android:name=".DetailListMenu" />
+        <activity android:name=".KomentarActivity" />
+        <activity android:name=".Fragments.FragmentsPolisi" />
+        <activity android:name=".Fragments.DiskusiFragments" />
+        <activity android:name=".Fragments.InfoHumasFragments" />
+        <activity android:name=".Fragments.VideoHumasFragments" />
+        <activity android:name=".Fragments.BeritaHumasFragments" />
+        <activity android:name=".Fragments.DetailVideoHumasFragments" />
+        <activity android:name=".Fragments.DetailBeritaHumasFragments" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LayananLainLainActivity" />
+        <activity android:name=".ProfilFragments" />
+        <activity android:name=".ChattActivity" />
+        <activity android:name=".SamsatOnlineActivity" />
+        <activity android:name=".HalamanAwalActivity" />
     </application>
 
 </manifest>
