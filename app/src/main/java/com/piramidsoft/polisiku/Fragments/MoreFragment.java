@@ -155,6 +155,8 @@ public class MoreFragment extends Fragment {
             case R.id.btSIMOnline:
                 break;
             case R.id.btSKCKOnline:
+                Intent intent4 = new Intent(getActivity(), InfoHumasFragments.class);
+                startActivity(intent4);
                 break;
             case R.id.btSamsatOnline:
                 break;

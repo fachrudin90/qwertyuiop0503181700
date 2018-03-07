@@ -34,7 +34,6 @@
         <activity
             android:name=".Fragments.DiskusiFragments"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
             android:name=".Fragments.InfoHumasFragments"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -54,6 +53,8 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".Fragments.Skckonline"></activity>
     </application>
 
 </manifest>
